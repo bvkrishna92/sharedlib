@@ -1,6 +1,6 @@
 def call(item){
   echo "this is  ${name}, its yourself"
 }
-else {
+def call(item){
   echo  "this is ${name}, its myself"
 }
