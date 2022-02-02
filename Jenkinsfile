@@ -6,11 +6,23 @@ pipeline {
            stage('Demo') {
                steps {
                   welcome("krishna")
-                  phone("reddy")
+               }
+           }
+            stage('build') {
+               steps {
+                     phone("reddy")
+               }
+            }
+            stage('test') {
+               steps {
                   resource("baby") 
-                    script{
-                  calculator.add(20,10)
-                  calculator.mul(20,10)
+            }
+       }
+            stage('deply') {
+                   steps {
+                      script{
+                         calculator.add(20,10)
+                         calculator.mul(20,10)
                 }               
             }  
          }          
